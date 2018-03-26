@@ -1,4 +1,4 @@
-package com.example;
+package com.example.domain.init;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
