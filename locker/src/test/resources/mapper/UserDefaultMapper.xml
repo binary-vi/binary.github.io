@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vi.test.mapper.UserDefaultMapper">
+
+	<!-- 这里的三个方法是模拟MyBatis Generator插件自动创建的代码，相当有参考价值 -->
+	
+	<update id="updateUser">
+		update user_default set name = #{name}, password = #{password}, version = #{version} where id = #{id}
+	</update>
+	
+	<update id="updateUserErr">
+		update user_default set name = #{name}, password = #{password}, version = #{version} where id = #{id}
+	</update>
+	
+	<insert id="initData" parameterType="com.vi.test.entity.UserDefault">
+		insert into user_default(id, name, password, version)values(#{id}, #{name}, #{password}, #{version})
+	</insert>
+	
+	<delete id="resetData">
+		delete from user_default where id = #{id}
+	</delete>
+	
+</mapper>
